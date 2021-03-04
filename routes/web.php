@@ -24,3 +24,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 // Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
+Route::get('/test', [PagesController::class, 'test']);
+Route::get('/testt', [PagesController::class, 'testt']);

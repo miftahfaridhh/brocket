@@ -34,5 +34,13 @@ class PagesController extends Controller
     {
         return view('pages.create');
     }
+    public function test()
+    {
+        return view('pages.test');
+    }
+    public function testt()
+    {
+        return view('pages.testt');
+    }
 }
 
