@@ -30,5 +30,5 @@ Made to complete studies, by :
 - open XAMPP without closing the CMD, klik start Click start on apache and MySQL
 - open your localhost/phpmyadmin on your browser
 - make a new database with the name 'brocket'
-- open cmd again, type php artisan migrate
-- type php artisan serve to run the laravel project
+- open cmd again, type 'php artisan migrate'
+- type 'php artisan serve' to run the laravel project
