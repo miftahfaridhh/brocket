@@ -1,6 +1,14 @@
 ## Brocket Project
 
-Di buat untuk menyelesaikan mata kuliah Kerja Praktek
+Made to complete studies, by :
+- Bryan Dario Lesmana
+- Muhammad Miftah Faridh
+- Suryanegara
+- Aditya Ghalib Hendryan 
+- Yogie Wisesa
+- Muhamad Fadil Hafiz
+- Nisrina Athallah
+
 
 ## Requirement
 
