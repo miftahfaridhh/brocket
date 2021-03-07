@@ -61,6 +61,9 @@
                         <!-- end .cardify -->
                     </form>
                 </div>
+                
+                <br>
+                            <button class="btn btn--md btn--round" type="submit">Generate my turnamen</button>
                 <!-- end .col-md-6 -->
             </div>
             <!-- end .row -->

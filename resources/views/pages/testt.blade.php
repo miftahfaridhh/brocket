@@ -11,6 +11,9 @@
 
         for (i = 0; i < a; i++) {
             var input = document.createElement("input");
+            input.type= "text";
+            input.class= "text_field";
+            input.name= "namaTim";
             ch.appendChild(input);
         }
     }
@@ -42,9 +45,11 @@
                                 <h4> Number Of Team</h4>
                          <form>
                                
-                                    <input type="text" class="text_field" id="nochapter" placeholder="Enter Number Of Team"/>
-                                    <input type="button" value="Click" onclick="generate()" />
-                                    <div id="ch"></div>
+                                <input type="text" class="text_field" id="nochapter" placeholder="Enter Number Of Team"/>
+                                <p>  </p>
+                                <input class="btn btn--md btn--round" type="button" value="Click To Add Team Name" onclick="generate()" />
+                                <p>  </p>
+                                <div id="ch"></div>
                         </form>
 
 
