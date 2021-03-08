@@ -6,14 +6,14 @@
     <script>
     function generate() {
 
-        var a = parseInt(document.getElementById("nochapter").value);
+        var a = parseInt(document.getElementById("totalMember").value);
         var ch = document.getElementById("ch");
 
         for (i = 0; i < a; i++) {
             var input = document.createElement("input");
             input.type= "text";
             input.class= "text_field";
-            input.name= "namaTim";
+            input.name= "namaTim"+(i+1);
             ch.appendChild(input);
         }
     }
@@ -23,7 +23,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
-                    <form action="#">
+                    <form method="POST" action="/generateBracket">
+                        @csrf
                         <div class="cardify login">
                             <div class="login--header">
                                 <h3>Welcome to Brocket</h3>
@@ -33,27 +34,37 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                    <label for="user_name">Tournament Name</label>
-                                    <input id="user_name" type="text" class="text_field" placeholder="Enter your Tournament Name">
+                                    <label for="turnamenName">Tournament Name</label>
+                                    <input id="turnamenName" name = "turnamenName" type="text" class="text_field" placeholder="Enter your Tournament Name">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="pass">Email</label>
-                                    <input id="pass" type="text" class="text_field" placeholder="Enter your Email">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="email" name = "email" class="text_field" placeholder="Enter your Email">
                                 </div>
 
-                                <h4> Number Of Team</h4>
-                         <form>
-                               
-                                <input type="text" class="text_field" id="nochapter" placeholder="Enter Number Of Team"/>
-                                <p>  </p>
-                                <input class="btn btn--md btn--round" type="button" value="Click To Add Team Name" onclick="generate()" />
-                                <p>  </p>
-                                <div id="ch"></div>
-                        </form>
+                                <form>
+                                    <label for="totalMember">Number Of Team</label>
+                                    <input type="number" class="text_field" name = "totalMember" id="totalMember" placeholder="Enter Number Of Team"/>
+                                    <p>  </p>
+                                    <input class="btn btn--md btn--round" type="button" value="Click To Add Team Name" onclick="generate()" />
+                                    <p>  </p>
+                                    <div id="ch"></div>
+                                    <p>  </p>
+                                </form>
 
+                                <!-- <form action="/generateBracket" method="post">
+                                    @csrf
+                                        <input type="hidden" id="turnamenName" name = "turnamenName">
+                                        <input type="hidden" id="email" name = "email">
+                                        <input type="hidden" name = "totalMember" id="totalMember">
+                                        <input class="btn btn--md btn--round" type="submit" value="Generate bracket">
+                                </form> -->
+
+                                <button class="btn btn--md btn--round" type="submit">generate my turnamen</button>
 
                                 </div>
+                            
                             </div>
                             <!-- end .login--form -->
                         </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;   
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\BracketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
 Route::get('/test', [PagesController::class, 'test']);
 Route::get('/testt', [PagesController::class, 'testt']);
+Route::post('/generateBracket', [BracketController::class, 'generate']);

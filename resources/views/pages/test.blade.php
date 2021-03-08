@@ -30,8 +30,8 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                    <label for="user_name">Tournament Name</label>
-                                    <input id="user_name" type="text" class="text_field" placeholder="Enter your Tournament Name">
+                                    <label for="turnamenName">Tournament Name</label>
+                                    <input id="turnamenName" type="text" class="text_field" placeholder="Enter your Tournament Name">
                                 </div>
 
                                 <div class="form-group">
@@ -53,7 +53,6 @@
 
                                 <button class="btn btn--md btn--round" type="submit">Generate my turnamen</button>
 
-
                                 </div>
                             </div>
                             <!-- end .login--form -->
@@ -61,9 +60,6 @@
                         <!-- end .cardify -->
                     </form>
                 </div>
-                
-                <br>
-                            <button class="btn btn--md btn--round" type="submit">Generate my turnamen</button>
                 <!-- end .col-md-6 -->
             </div>
             <!-- end .row -->
