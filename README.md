@@ -15,6 +15,7 @@ Made to complete studies, by :
 - Windows 10
 - Node.js : https://nodejs.org/en/download/
 - XAMPP : https://www.apachefriends.org/index.html
+- Composer : https://getcomposer.org/Composer-Setup.exe
 - Code Editor
 
 ## How to run
