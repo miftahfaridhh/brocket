@@ -27,4 +27,7 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
 Route::get('/test', [PagesController::class, 'test']);
 Route::get('/testt', [PagesController::class, 'testt']);
+Route::get('/create', [PagesController::class, 'create']);
+Route::get('/addteam', [PagesController::class, 'addteam']);
 Route::post('/generateBracket', [BracketController::class, 'generate']);
+

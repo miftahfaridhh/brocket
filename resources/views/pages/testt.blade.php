@@ -3,7 +3,7 @@
 <!--================================
             START LOGIN AREA
     =================================-->
-    <script>
+<script>
     function generate() {
 
         var a = parseInt(document.getElementById("totalMember").value);
@@ -11,49 +11,49 @@
 
         for (i = 0; i < a; i++) {
             var input = document.createElement("input");
-            input.type= "text";
-            input.class= "text_field";
-            input.name= "namaTim"+(i+1);
+            input.type = "text";
+            input.class = "text_field";
+            input.name = "namaTim" + (i + 1);
             ch.appendChild(input);
         }
     }
-    </script>
+</script>
 
-    <section class="login_area section--padding2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <form method="POST" action="/generateBracket">
-                        @csrf
-                        <div class="cardify login">
-                            <div class="login--header">
-                                <h3>Welcome to Brocket</h3>
-                                <p> Brocket</p>
+<section class="login_area section--padding2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <form method="POST" action="/generateBracket">
+                    @csrf
+                    <div class="cardify login">
+                        <div class="login--header">
+                            <h3>Welcome to Brocket</h3>
+                            <p> Brocket</p>
+                        </div>
+                        <!-- end .login_header -->
+
+                        <div class="login--form">
+                            <div class="form-group">
+                                <label for="turnamenName">Tournament Name</label>
+                                <input id="turnamenName" name="turnamenName" type="text" class="text_field" placeholder="Enter your Tournament Name">
                             </div>
-                            <!-- end .login_header -->
 
-                            <div class="login--form">
-                                <div class="form-group">
-                                    <label for="turnamenName">Tournament Name</label>
-                                    <input id="turnamenName" name = "turnamenName" type="text" class="text_field" placeholder="Enter your Tournament Name">
-                                </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email" class="text_field" placeholder="Enter your Email">
+                            </div>
 
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input id="email" type="email" name = "email" class="text_field" placeholder="Enter your Email">
-                                </div>
+                            <form>
+                                <label for="totalMember">Number Of Team</label>
+                                <input type="number" class="text_field" name="totalMember" id="totalMember" placeholder="Enter Number Of Team" />
+                                <p> </p>
+                                <input class="btn btn--md btn--round" type="button" value="Click To Add Team Name" onclick="generate()" />
+                                <p> </p>
+                                <div id="ch"></div>
+                                <p> </p>
+                            </form>
 
-                                <form>
-                                    <label for="totalMember">Number Of Team</label>
-                                    <input type="number" class="text_field" name = "totalMember" id="totalMember" placeholder="Enter Number Of Team"/>
-                                    <p>  </p>
-                                    <input class="btn btn--md btn--round" type="button" value="Click To Add Team Name" onclick="generate()" />
-                                    <p>  </p>
-                                    <div id="ch"></div>
-                                    <p>  </p>
-                                </form>
-
-                                <!-- <form action="/generateBracket" method="post">
+                            <!-- <form action="/generateBracket" method="post">
                                     @csrf
                                         <input type="hidden" id="turnamenName" name = "turnamenName">
                                         <input type="hidden" id="email" name = "email">
@@ -61,23 +61,23 @@
                                         <input class="btn btn--md btn--round" type="submit" value="Generate bracket">
                                 </form> -->
 
-                                <button class="btn btn--md btn--round" type="submit">generate my turnamen</button>
+                            <button class="btn btn--md btn--round" type="submit">generate my turnamen</button>
 
-                                </div>
-                            
-                            </div>
-                            <!-- end .login--form -->
                         </div>
-                        <!-- end .cardify -->
-                    </form>
-                </div>
-                <!-- end .col-md-6 -->
+
+                    </div>
+                    <!-- end .login--form -->
             </div>
-            <!-- end .row -->
+            <!-- end .cardify -->
+            </form>
         </div>
-        <!-- end .container -->
-    </section>
-    <!--================================
+        <!-- end .col-md-6 -->
+    </div>
+    <!-- end .row -->
+    </div>
+    <!-- end .container -->
+</section>
+<!--================================
             END LOGIN AREA
     =================================-->
 @stop

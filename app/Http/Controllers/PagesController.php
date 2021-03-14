@@ -42,5 +42,9 @@ class PagesController extends Controller
     {
         return view('pages.testt');
     }
+    public function addteam()
+    {
+        return view('pages.addteam');
+    }
 }
 
