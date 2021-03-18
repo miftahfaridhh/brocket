@@ -9,5 +9,5 @@ class turnamen extends Model
 {
     use HasFactory;
     protected $table = 'turnamen';
-    protected $fillable = ['turnamenId', 'turnamenName','userId','totalMember'];
+    protected $fillable = ['id','user_id','name','total_member','date_start','date_end'];
 }

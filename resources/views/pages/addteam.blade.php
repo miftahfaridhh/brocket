@@ -31,38 +31,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <form method="POST" action="/generateBracket">
+                        <form method="POST" action="/generatebracket">
                             @csrf
                             <div class="section-title col-lg-6">
                                 <img src="images/Group 77.png" alt="title-image" style="background-size: 100% 100%;">
-                                <!-- <h1>Welcome to
-                                    <span class="highlighted">Brocket!</span>
-                                </h1> -->
                             </div>
 
-                            <div class="login--form col-lg-6 text-center">
-                                <form>
-                                    <div class="text-center">
-                                        <label for="totalMember">Number Of Team</label>
-                                    </div>
-                                    <input type="number" name="totalMember" id="totalMember" placeholder="Enter Number Of Team" />
-                                    <p> </p>
-                                    <input class="btn btn--md btn--round" type="button" value="Click To Add Team Name" onclick="generate()" />
-                                    <p> </p>
-                                    <div id="ch"></div>
-                                    <p> </p>
-                                </form>
-
-                                <!-- <form action="/generateBracket" method="post">
-                                    @csrf
-                                        <input type="hidden" id="turnamenName" name = "turnamenName">
-                                        <input type="hidden" id="email" name = "email">
-                                        <input type="hidden" name = "totalMember" id="totalMember">
-                                        <input class="btn btn--md btn--round" type="submit" value="Generate bracket">
-                                </form> -->
-
-                                <button class="btn btn--md btn--round" type="submit">Generate My Tournament</button>
+                            <div class="form-group col-lg-6">
+                                <input type="hidden" name="turnamen_id" value="{{ $turnamen->id }}">
+                                <input type="hidden" name="total_member" value="{{ $turnamen->total_member }}">
+                                <label for="name">Input Your Team Name</label>
+                                @for ($i = 0; $i < ($turnamen->total_member); $i++)
+                                <input id="name" name="member_name[]" type="text" placeholder="Enter your team name">
+                                @endfor
                             </div>
+                            <button class="btn btn--md btn--round" type="submit">Generate My Tournament</button>                            
+
                         </form>
                     </div>
                     <!-- end .col-md-6 -->

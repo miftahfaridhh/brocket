@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <form method="POST" action="/generateBracket">
+                        <form method="POST" action="/storeturnamen">
                             @csrf
                             <div class="section-title">
                                 <h1>Welcome to
@@ -41,16 +41,21 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                    <label for="turnamenName">Tournament Name</label>
-                                    <input id="turnamenName" name="turnamenName" type="text" placeholder="Enter your Tournament Name">
+                                    <label for="name">Tournament Name</label>
+                                    <input id="name" name="name" type="text" placeholder="Enter your Tournament Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="total_member">Number Of Team</label>
+                                    <input type="number" class="text" name="total_member" id="total_member" placeholder="Enter Number Of Team" />
                                 </div>
 
                                 <div class="login--form row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="datp1">Date Start</label>
+                                            <label for="date_start">Date Start</label>
                                             <div class="input_with_icon">
-                                                <input id="datp1" type="text" class="dattaPikkara" placeholder="From">
+                                                <input id="date_start" name="date_start"type="text" class="dattaPikkara" placeholder="From">
                                                 <span class="lnr lnr-calendar-full"></span>
                                             </div>
                                         </div>
@@ -58,18 +63,20 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="datp2">Date End</label>
+                                            <label for="date_end">Date End</label>
                                             <div class="input_with_icon">
-                                                <input id="datp2" type="text" class="dattaPikkara" placeholder="To">
+                                                <input id="date_end" name="date_end"type="text" class="dattaPikkara" placeholder="To">
                                                 <span class="lnr lnr-calendar-full"></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="hero__btn-area">
-                                    <a href="/addteam" class="btn btn--md btn--round">Next</a>
-                                </div>
+                                <button class="btn btn--md btn--round" type="submit">Input Team Name</button>
+
+                                <!-- <div class="hero__btn-area">
+                                    <a href="/addteam" class="btn btn--md btn--round">Input Team Name</a>
+                                </div> -->
                             </div>
                         </form>
                     </div>
