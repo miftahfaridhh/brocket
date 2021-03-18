@@ -13,15 +13,15 @@ class CreateTurnamenMember extends Migration
      */
     public function up()
     {
-        Schema::create('turnamen_member', function (Blueprint $table) {
+        Schema::create('turnamenMember', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('turnamenId');
             $table->string('userId');
             $table->string('clubName');
-            $table->integer('goldMedal');
-            $table->integer('silverMedal');
-            $table->integer('bronzeMedal');
-            $table->integer('totalMedal');
+            $table->integer('goldMedal')->nullable();;
+            $table->integer('silverMedal')->nullable();;
+            $table->integer('bronzeMedal')->nullable();;
+            $table->integer('totalMedal')->nullable();;
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateTurnamenMember extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('turnamen_member');
+        Schema::dropIfExists('turnamenMember');
     }
 }

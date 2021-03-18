@@ -13,7 +13,7 @@
             var input = document.createElement("input");
             input.type= "text";
             input.class= "text_field";
-            input.name= "namaTim"+(i+1);
+            input.name= "clubName";
             ch.appendChild(input);
         }
     }
@@ -43,7 +43,7 @@
                                     <input id="email" type="email" name = "email" class="text_field" placeholder="Enter your Email">
                                 </div>
 
-                                <form>
+                                <div>
                                     <label for="totalMember">Number Of Team</label>
                                     <input type="number" class="text_field" name = "totalMember" id="totalMember" placeholder="Enter Number Of Team"/>
                                     <p>  </p>
@@ -51,7 +51,7 @@
                                     <p>  </p>
                                     <div id="ch"></div>
                                     <p>  </p>
-                                </form>
+                                </div>
 
                                 <!-- <form action="/generateBracket" method="post">
                                     @csrf
