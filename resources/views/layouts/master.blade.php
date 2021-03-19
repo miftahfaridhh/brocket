@@ -12,7 +12,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
-    <title>Martplace</title>
+    <title>Brocket</title>
 
     <!-- inject:css -->
     
