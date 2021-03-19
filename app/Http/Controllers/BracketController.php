@@ -25,8 +25,9 @@ class BracketController extends Controller
             'name' => $request->name,
             'total_member' => $request->total_member,
             'date_start' => Carbon::createFromFormat('m/d/Y', $request->date_start),
-            'date_end' => Carbon::createFromFormat('m/d/Y', $request->date_end)
-            
+            'date_end' => Carbon::createFromFormat('m/d/Y', $request->date_end),
+            'description' => $request->description
+
         ]);
 
         $turnamen = DB::table('turnamen')->latest('updated_at')->first();
@@ -55,9 +56,11 @@ class BracketController extends Controller
         $turney = DB::table('turnamen')
                 ->where('id', '=', $id)
                 ->get();
-        dd($turney);
+        // dd($turney);
 
-        return view('pages.showbracket', compact('id','turney','members'));
+        $year = Carbon::parse($turney[0]->date_start)->year;
+
+        return view('pages.bracket', compact('id','turney','members','year'));
     }
 
     public function show(Request $request)

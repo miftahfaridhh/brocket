@@ -72,6 +72,11 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea type="text" cols="10" rows="5" class="text" name="description" id="description" placeholder="Input Turnamen Description"></textarea>
+                                </div>
+
                                 <button class="btn btn--md btn--round" type="submit">Input Team Name</button>
 
                                 <!-- <div class="hero__btn-area">

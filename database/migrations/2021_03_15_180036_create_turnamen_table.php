@@ -21,6 +21,7 @@ class CreateTurnamenTable extends Migration
             $table->integer('total_member');
             $table->datetime('date_start');
             $table->datetime('date_end');
+            $table->text('description');
             $table->timestamps();
         });
     }

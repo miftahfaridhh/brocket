@@ -21,8 +21,7 @@
 
                         <div class="about_hero_btns">
                             <a href="#" class="play_btn" data-toggle="modal" data-target="#myModal">
-                                <img src="images/play_btn.png" alt="PLay">Play Quick Video</a>
-                            <a href="/templatebrocket/src/signup.php" class="btn btn--white btn--lg btn--round">Join Us </a>
+                            <a href="/register" class="btn btn--white btn--lg btn--round">Join Us </a>
                         </div>
                     </div>
                     <!-- end /.about_hero_contents -->
@@ -111,6 +110,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                <li class="happening">
+                <div class="happening--period">
                     <div class="section-title">
                         <h1>Brocket
                             <span class="highlighted">TIMLINE</span>
@@ -515,61 +516,6 @@
     <!--================================
     END MARTPLACE TEAM AREA
 =================================-->
-
-    <!--================================
-    START PARTNER AREA
-=================================-->
-    <section class="partner-area section--padding partner--area2 bgimage">
-        <div class="bg_image_holder">
-            <img src="images/bgbg.png" alt="">
-        </div>
-        <!-- start container -->
-        <div class="container">
-            <!-- start row -->
-            <div class="row">
-                <!-- start col-md-12 -->
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>We are
-                            <span class="highlighted">Featured on</span>
-                        </h1>
-                        <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
-                            est laborum dolo rumes fugats untras.</p>
-                    </div>
-                </div>
-                <!-- end /.col-md-12 -->
-            </div>
-            <!-- end /.row -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="partners">
-                        <div class="partner">
-                            <img src="images/cl1.png" alt="partner image">
-                        </div>
-                        <div class="partner">
-                            <img src="images/cl2.png" alt="partner image">
-                        </div>
-                        <div class="partner">
-                            <img src="images/cl3.png" alt="partner image">
-                        </div>
-                        <div class="partner">
-                            <img src="images/cl4.png" alt="partner image">
-                        </div>
-                        <div class="partner">
-                            <img src="images/cl2.png" alt="partner image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end /.row -->
-        </div>
-        <!-- end /.container -->
-    </section>
-    <!--================================
-    END PARTNER AREA
-=================================-->
-
     <!--================================
     START TESTIMONIAL
 =================================-->
@@ -749,7 +695,7 @@
                     <div class="call-to-wrap">
                         <h1 class="text--white">Ready to Join Brocket?!</h1>
                         <h4 class="text--white">Over 25,000 users trust the Brocket.</h4>
-                        <a href="/templatebrocket/src/signup.html" class="btn btn--lg btn--round btn--white callto-action-btn">Join Us Now</a>
+                        <a href="/register" class="btn btn--lg btn--round btn--white callto-action-btn">Join Us Now</a>
                     </div>
                 </div>
             </div>
