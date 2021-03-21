@@ -1295,8 +1295,14 @@ h6 {
 }
 
 .navbar-nav {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  
+  float: right;
+  margin-left: auto;
+  margin-top: 10px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: right;
 }
 
 /* menu style 2 */
@@ -16666,4 +16672,12 @@ span.counter {
 }
 .lnr-pointer-left:before {
 	content: "\e8a9";
+}
+
+.rounded-image{
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  width: 40px;
+  height: 40px;
 }

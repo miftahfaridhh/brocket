@@ -37,55 +37,103 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
 </head>
 
-<body class="preload login-page">
+<body>
 
-    <!--================================
+        <!--================================
         START MENU AREA
     =================================-->
     <!-- start menu-area -->
-    <div class="menu-area bg-dark">
+    <div class="menu-area">
+
         <!-- start .mainmenu_area -->
-        <div class="mainmenu">
+        <div class="mainmenu bg-dark">
             <!-- start .container -->
             <div class="container">
                 <!-- start .row-->
                 <div class="row">
                     <!-- start .col-md-12 -->
-                    <div class="col-md-12 navbar-header">
+                    <div class="col-md-12">
                         <nav class="navbar navbar-expand-md navbar-dark bg-dark mainmenu__menu">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-
-                            <!-- Start Logo -->
-                            <a class="navbar-brand" href="/">
-                                <img src="images/Logo 270x50 Trans-01.png" alt="header logo" class="img-responsive" style="height:50px;">
-                            </a>
-                            <!-- End Logo -->
-
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav_item">
-                                        <a class="navlink text-white" href="/">HOME</a>
-                                    </li>
-                                    <li class="nav_item">
-                                        <a class="navlink text-white" href="/dashboard">DASHBOARD</a>
-                                    </li>
-                                    <li class="nav_item">
-                                        <a class="navlink text-white" href="/about">ABOUT US</a>
-                                    </li>
-                                    <li class="nav_item">
-                                        <a class="navlink text-white" href="/contact">CONTACT US</a>
-                                    </li>
-                                    <li class="nav_item">
-                                        <a class="navlink text-white" href="/login">LOGIN</a>
-                                    </li>
-                                </ul>
+                            <div class="col-lg-3 col-md-3 col-6 v_middle">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/Logo 270x50 Trans-01.png" alt="logo image" class="img-fluid">
+                                    </a>
+                                </div>
                             </div>
-                            <!-- /.navbar-collapse -->
+
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav text-white">
+                                    <li>
+                                        <a class="text-white" href="/">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="/about">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="/contact">CONTACT US</a>
+                                    </li>
+                                    @guest
+                                    <li>
+                                        <a class="text-white" href="/login">LOGIN</a>
+                                    </li>
+                                    @endguest
+                                </ul>
+                                @auth
+                                    <!--start .author-author__info-->
+                                    <div class="author-author__info inline has_dropdown">
+                                        @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                                            <img class="rounded-image" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                                        @else
+                                        <div class="author__avatar">
+                                            <img src="images/usr_avatar.png" alt="user avatar">
+                                        </div>
+                                        @endif
+
+                                        <!-- <div class="autor__info">
+                                            <p class="text-white"> {{ Auth::user()->name }} </p>
+                                            
+                                             <p class="ammount">{{ Auth::user()->name }}</p>
+                                        </div> -->
+
+                                        <div class="dropdowns dropdown--author">
+                                            <ul>
+                                                <li>
+                                                    <a href="{{ route('profile.show') }}">
+                                                    <span class="lnr lnr-user"></span>Profile</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/dashboard">
+                                                    <span class="lnr lnr-home"></span> Dashboard</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/crate">
+                                                    <span class="lnr lnr-cog"></span> Make a Bracket</a>
+                                                </li>
+                                                <li>
+                                                    <form method="POST" action="{{ route('logout') }}">
+                                                        @csrf
+
+                                                        <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                            this.closest('form').submit();">
+                                                            <span class="lnr lnr-exit"> Log Out</span>
+                                                        </x-jet-dropdown-link>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end /.author-author__info-->
+                                </div>
+                                <!-- /.navbar-collapse -->
+                                @endauth
                         </nav>
+                        
                     </div>
                     <!-- end /.col-md-12 -->
                 </div>
@@ -96,7 +144,6 @@
         <!-- end /.mainmenu-->
     </div>
     <!-- end /.menu-area -->
-
     <!--================================
         END MENU AREA
     =================================-->
