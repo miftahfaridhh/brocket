@@ -46,8 +46,13 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="total_member">Number Of Team</label>
-                                    <input type="number" class="text" name="total_member" id="total_member" placeholder="Enter Number Of Team" />
+                                    <label for="total_member">Total Participants</label>
+                                    <select type="number" class="form-control" name="total_member" id="total_member" placeholder="Enter Number Of Team">
+                                        <option>4</option>
+                                        <option>8</option>
+                                        <option>16</option>
+                                        <option>32</option>
+                                    </select>
                                 </div>
 
                                 <div class="login--form row">

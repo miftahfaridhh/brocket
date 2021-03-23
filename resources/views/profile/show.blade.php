@@ -1,6 +1,3 @@
-@extends('layouts.master')
-@section('content')
-
 <x-app-layout>
 
     <div>
@@ -41,4 +38,3 @@
         </div>
     </div>
 </x-app-layout>
-@stop

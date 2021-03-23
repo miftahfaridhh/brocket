@@ -112,7 +112,7 @@
                                                     <span class="lnr lnr-home"></span> Dashboard</a>
                                                 </li>
                                                 <li>
-                                                    <a href="/crate">
+                                                    <a href="/create">
                                                     <span class="lnr lnr-cog"></span> Make a Bracket</a>
                                                 </li>
                                                 <li>
