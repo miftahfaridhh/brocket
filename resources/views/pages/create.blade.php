@@ -3,21 +3,6 @@
 <!--================================
         START CREATE AREA
 =================================-->
-<script>
-    function generate() {
-
-        var a = parseInt(document.getElementById("totalMember").value);
-        var ch = document.getElementById("ch");
-
-        for (i = 0; i < a; i++) {
-            var input = document.createElement("input");
-            input.type = "text";
-            input.class = "text_field";
-            input.name = "namaTim" + (i + 1);
-            ch.appendChild(input);
-        }
-    }
-</script>
 
 <section class="section--padding2 bgimage">
     <div class="bg_image_holder">
@@ -84,9 +69,6 @@
 
                                 <button class="btn btn--md btn--round" type="submit">Input Team Name</button>
 
-                                <!-- <div class="hero__btn-area">
-                                    <a href="/addteam" class="btn btn--md btn--round">Input Team Name</a>
-                                </div> -->
                             </div>
                         </form>
                     </div>

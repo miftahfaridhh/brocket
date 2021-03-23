@@ -32,6 +32,7 @@ class BracketController extends Controller
 
         $turnamen = DB::table('turnamen')->latest('updated_at')->first();
         // dd($turnamen);
+        // return redirect()->route('turnamen.addteam', ['name' => $request->name]);
         return view("pages.addteam", compact('turnamen'));
 
     } 

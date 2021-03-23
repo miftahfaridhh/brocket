@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;   
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\BracketController;
+use App\Http\Controllers\ShowController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,16 +20,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
 Route::get('/test', [PagesController::class, 'test']);
 Route::get('/testt', [PagesController::class, 'testt']);
-Route::get('/create', [PagesController::class, 'create']);
-Route::post('/generatebracket', [BracketController::class, 'generatebracket']);
-Route::post('/showbracket/{id}', [BracketController::class, 'show']);
-Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);
 
+Route::group(['middleware' => ['auth', 'verified']], function () {
+
+    Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
+    Route::get('/create', [PagesController::class, 'create']);
+    Route::get('/addteam/{name}', [ShowController::class, 'addteam'])->name('turnamen.addteam');
+    Route::post('/generatebracket', [BracketController::class, 'generatebracket']);
+    Route::post('/showbracket/{id}', [BracketController::class, 'show']);
+    Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);    
+});
