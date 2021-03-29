@@ -29,7 +29,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 
     Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
     Route::get('/create', [PagesController::class, 'create']);
-    Route::get('/addteam/{name}', [ShowController::class, 'addteam'])->name('turnamen.addteam');
+    Route::get('/addteam', [ShowController::class, 'addteam'])->name('turnamen.addteam');
+    Route::get('/bracket/{id}', [ShowController::class, 'show'])->name('turnamen.bracket');
     Route::post('/generatebracket', [BracketController::class, 'generatebracket']);
     Route::post('/showbracket/{id}', [BracketController::class, 'show']);
     Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);    

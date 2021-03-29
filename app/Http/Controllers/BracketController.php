@@ -32,13 +32,12 @@ class BracketController extends Controller
 
         $turnamen = DB::table('turnamen')->latest('updated_at')->first();
         // dd($turnamen);
-        // return redirect()->route('turnamen.addteam', ['name' => $request->name]);
+        // return redirect()->route('turnamen.addteam');
         return view("pages.addteam", compact('turnamen'));
 
     } 
 
     public function generatebracket(Request $request){
-        // dd($request->all());
         $mem = $request->member_name;
         shuffle($mem);
         for ($i = 0; $i < ($request->total_member); $i++){
@@ -47,21 +46,21 @@ class BracketController extends Controller
                 'name' => $mem[$i]             
             ]);
         }
-        $id = $request->turnamen_id;
+        // $id = $request->turnamen_id;
+        // $members = DB::table('member')
+        //         ->where('turnamen_id', '=', $id)
+        //         ->get();
+        // // dd($members);
+        // $turney = DB::table('turnamen')
+        //         ->where('id', '=', $id)
+        //         ->get();
+        // // dd($turney);
+        // $year = Carbon::parse($turney[0]->date_start)->year;
+        // return view('pages.bracket', compact('id','turney','members','year'));
+
+        return redirect()->route('turnamen.bracket', ['id' => $request->turnamen_id]);
+
         
-        $members = DB::table('member')
-                ->where('turnamen_id', '=', $id)
-                ->get();
-        // dd($members);
-
-        $turney = DB::table('turnamen')
-                ->where('id', '=', $id)
-                ->get();
-        // dd($turney);
-
-        $year = Carbon::parse($turney[0]->date_start)->year;
-
-        return view('pages.bracket', compact('id','turney','members','year'));
     }
 
     public function show(Request $request)

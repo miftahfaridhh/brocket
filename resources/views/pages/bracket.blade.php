@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 	<header class="hero">
     <div class="hero-wrap">
      <p class="intro" style ="margin-bottom:15px;" id="intro">Bracket</p>
