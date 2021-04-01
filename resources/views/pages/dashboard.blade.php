@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <!--================================
+<!--================================
     START FEATURED PRODUCT AREA
 =================================-->
     <section class="featured-products bgcolor  section--padding">
