@@ -20,9 +20,9 @@
 				@for ($i = 0; $i < (($turney[0]->total_member)/2); $i++)
 					@if ($i%2==0)
 						<ul class="matchup">
-						<li class="team team-top">{{$members[$i]->name}}<span class="score">76</span></li>
+						<li class="team team-top">{{$members[$i]->name}}<span class="score">&nbsp;</span></li>
 					@else
-						<li class="team team-bottom">{{$members[$i]->name}}<span class="score">82</span></li>
+						<li class="team team-bottom">{{$members[$i]->name}}<span class="score">&nbsp;</span></li>
 						</ul>
 					@endif
 				@endfor			
@@ -130,9 +130,9 @@
 				@for ($i = (($turney[0]->total_member)/2); $i < ($turney[0]->total_member) ; $i++)
 					@if ($i%2==0)
 						<ul class="matchup">
-						<li class="team team-top">{{$members[$i]->name}}<span class="score">76</span></li>
+						<li class="team team-top">{{$members[$i]->name}}<span class="score">&nbsp;</span></li>
 					@else
-						<li class="team team-bottom">{{$members[$i]->name}}<span class="score">82</span></li>
+						<li class="team team-bottom">{{$members[$i]->name}}<span class="score">&nbsp;</span></li>
 						</ul>
 					@endif
 				@endfor				
@@ -142,20 +142,22 @@
 
 
 	</div>
-		<button style="align-items: center;" class="center btn btn--md btn--round" type="button" onClick="window.print()">Print This Page</button>
-		<button style="align-items: center;" class="center btn btn--md btn--round" type="button" onclick="copyToClipboard()">Link Address</button>
 
+	<div class="text-center">
+		<button class="justify-content-center btn btn--md btn--round" type="button" onClick="window.print()">Print This Page</button>
+		<button class="justify-content-center btn btn--md btn--round" type="button" onclick="copyToClipboard()">Share</button>
+	</div>
 	</section>
 
 	<script>
-	function copyToClipboard(text) {
-	var inputc = document.body.appendChild(document.createElement("input"));
-	inputc.value = window.location.href;
-	inputc.focus();
-	inputc.select();
-	document.execCommand('copy');
-	inputc.parentNode.removeChild(inputc);
-	alert("URL Copied.");
-	}
+		function copyToClipboard(text) {
+		var inputc = document.body.appendChild(document.createElement("input"));
+		inputc.value = window.location.href;
+		inputc.focus();
+		inputc.select();
+		document.execCommand('copy');
+		inputc.parentNode.removeChild(inputc);
+		alert("URL Copied.");
+		}
 	</script>
 @stop

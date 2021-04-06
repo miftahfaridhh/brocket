@@ -20,7 +20,9 @@ class ShowController extends Controller
      */
     public function index()
     {
-        //
+        $turney = turnamen::all();
+        // dd ($turnamen);
+        return view('pages.dashboard', compact('turney'));
     }
 
     /**

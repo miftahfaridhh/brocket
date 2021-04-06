@@ -538,30 +538,7 @@
                     </div>
 
                     <div class="filter__menu">
-                        <p>Filter by:</p>
-                        <div class="filter__menu_icon">
-                            <a href="#" id="drop1" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="svg" src="images/svg/menu.svg" alt="menu icon">
-                            </a>
-
-                            <ul class="filter_dropdown dropdown-menu" aria-labelledby="drop1">
-                                <li>
-                                    <a href="#">Trending items</a>
-                                </li>
-                                <li>
-                                    <a href="#">Best seller</a>
-                                </li>
-                                <li>
-                                    <a href="#">Best rating</a>
-                                </li>
-                                <li>
-                                    <a href="#">Low price</a>
-                                </li>
-                                <li>
-                                    <a href="#">High price</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <p></p>
                     </div>
                 </div>
             </div>
