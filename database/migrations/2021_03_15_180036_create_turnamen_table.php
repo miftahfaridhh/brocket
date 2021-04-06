@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTurnamen extends Migration
+class CreateTurnamenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,10 +15,13 @@ class CreateTurnamen extends Migration
     {
         Schema::create('turnamen', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('turnamenId');
-            $table->string('turnamenName');
-            $table->string('userId');
-            $table->string('totalMember');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade');
+            $table->string('name');
+            $table->integer('total_member');
+            $table->datetime('date_start');
+            $table->datetime('date_end');
+            $table->text('description');
             $table->timestamps();
         });
     }
