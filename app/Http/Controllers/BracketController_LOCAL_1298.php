@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-<<<<<<< HEAD
 use App\Models\turnamen;
 use App\Models\member;
 use App\Models\User;
@@ -12,16 +11,12 @@ use Auth;
 use Redirect;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-=======
-use App\Models\turnamenMember;
->>>>>>> db6bd64f1d236139f4095a258471e8d21ada05af
 
 class BracketController extends Controller
 {
 
     public function storeturnamen(Request $request)
     {
-<<<<<<< HEAD
       
 
         // dd($request->all());
@@ -81,15 +76,5 @@ class BracketController extends Controller
             // 'bronzemedal' => $request->bronzemedal
         ]);
         return view('dashboard');
-=======
-
-        // dd($request->all());
-        turnamenMember::create([
-            'turnamenId' => ($request->turnamenName).($request->email),
-            'userId' => $request->turnamenName,
-            'clubName' => $request->clubName
-        ]);
-        return view('pages.test');
->>>>>>> db6bd64f1d236139f4095a258471e8d21ada05af
     }
 }
