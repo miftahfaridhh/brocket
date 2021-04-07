@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\User;
-use \App\email;
-use \App\subscribe;
+use App\Models\User;
+use App\Models\email;
+use App\Models\subscribe;
 use Redirect;
 
 class MailController extends Controller
