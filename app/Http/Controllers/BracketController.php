@@ -77,7 +77,7 @@ class BracketController extends Controller
         ]);
         return view('dashboard');
     }
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         for ($i = 0; $i < ($request->total_member); $i++){
             DB::table('member')->where('name',$request->name[$i])->update([
