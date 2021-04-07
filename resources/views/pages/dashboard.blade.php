@@ -41,6 +41,9 @@
                                 <div class="prod_btn">
                                     <a href="/bracket/{{$turnamen->id}}" class="transparent btn--sm btn--round">More Info</a>
                                 </div>
+                                <div class="prod_btn">
+                                    <a href="/bracket/edit/{{$turnamen->id}}" class="transparent btn--sm btn--round">Edit</a>
+                                </div>
                             </div>
                             <!-- end /.featured__preview-img -->
 
