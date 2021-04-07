@@ -37,7 +37,7 @@
                     @foreach ($turney as $turnamen)
                         <div class="featured__single-slider">
                             <div class="featured__preview-img">
-                                <img src="images/featprod.jpg" alt="Featured products">
+                                <img src="images/featprod.png" alt="Featured products">
                                 <div class="prod_btn">
                                     <a href="/bracket/{{$turnamen->id}}" class="transparent btn--sm btn--round">More Info</a>
                                 </div>
