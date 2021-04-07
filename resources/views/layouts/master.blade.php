@@ -61,7 +61,7 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="col-lg-3 col-md-3 col-6 v_middle">
                                 <div class="logo">
-                                    <a href="/dashboard">
+                                    <a href="/">
                                         <img src="{{ asset('images/Logo 270x50 Trans-01.png') }}" alt="logo image" class="img-fluid">
                                     </a>
                                 </div>

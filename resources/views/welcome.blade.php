@@ -204,7 +204,7 @@
                 <div class="call-to-wrap">
                     <h1 class="text--white">Ready to Join Our Bracket Generator!</h1>
                     <h4 class="text--white">That will help you to manage your event. <br> Different competitions, different types of brackets</h4>
-                    <a href="/login" class="btn btn--lg btn--round btn--white callto-action-btn">Join Us Today</a>
+                    <a href="/create" class="btn btn--lg btn--round btn--white callto-action-btn">Create Your Bracket</a>
                 </div>
             </div>
         </div>
@@ -213,57 +213,5 @@
 <!--================================
     END CALL TO ACTION AREA
 =================================-->
-
-<!--================================
-    START SELL BUY
-=================================-->
-<section class="proposal-area">
-
-    <!-- start container-fluid -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 no-padding">
-                <div class="proposal proposal--left bgimage">
-                    <div class="bg_image_holder">
-                        <img src="images/bbg.png" alt="prop image">
-                    </div>
-                    <div class="content_above">
-                        <div class="proposal__icon ">
-                            <img src="images/buy.png" alt="Buy icon">
-                        </div>
-                        <div class="proposal__content ">
-                            <h1 class="text--white">Tournament Type</h1>
-                        </div>
-                        <a href="/create" class="btn--round btn btn--lg btn--white">Get Started</a>
-                    </div>
-                </div>
-                <!-- end /.proposal -->
-            </div>
-
-            <div class="col-md-6 no-padding">
-                <div class="proposal proposal--right">
-                    <div class="bg_image_holder">
-                        <img src="images/sbg.png" alt="this is magic">
-                    </div>
-                    <div class="content_above">
-                        <div class="proposal__icon">
-                            <img src="images/sell.png" alt="Sell icon" height="200" width="200">
-                        </div>
-                        <div class="proposal__content ">
-                            <h1 class="text--white">League Type</h1>
-                        </div>
-                        <a href="/leaguecreate" class="btn--round btn btn--lg btn--white">Get Started</a>
-                    </div>
-                </div>
-                <!-- end /.proposal -->
-            </div>
-        </div>
-    </div>
-    <!-- start container-fluid -->
-</section>
-<!--================================
-    END SELL BUY
-=================================-->
-
 
 @stop
