@@ -192,6 +192,29 @@
 =================================-->
 
 <!--================================
+    START CALL TO ACTION AREA
+=================================-->
+<section class="call-to-action bgimage">
+    <div class="bg_image_holder">
+        <img src="images/calltobg.jpg" height="1920" width="400"alt="">
+    </div>
+    <div class="container content_above">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="call-to-wrap">
+                    <h1 class="text--white">Ready to Join Our Bracket Generator!</h1>
+                    <h4 class="text--white">That will help you to manage your event. <br> Different competitions, different types of brackets</h4>
+                    <a href="/login" class="btn btn--lg btn--round btn--white callto-action-btn">Join Us Today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================================
+    END CALL TO ACTION AREA
+=================================-->
+
+<!--================================
     START SELL BUY
 =================================-->
 <section class="proposal-area">
@@ -209,11 +232,9 @@
                             <img src="images/buy.png" alt="Buy icon">
                         </div>
                         <div class="proposal__content ">
-                            <h1 class="text--white">Sell Your Products</h1>
-                            <p class="text--white">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                                leo quam aliquet diamcongue is laoreet elit metus.</p>
+                            <h1 class="text--white">Tournament Type</h1>
                         </div>
-                        <a href="#" class="btn--round btn btn--lg btn--white">Become an Author</a>
+                        <a href="/create" class="btn--round btn btn--lg btn--white">Become an Author</a>
                     </div>
                 </div>
                 <!-- end /.proposal -->
@@ -229,11 +250,9 @@
                             <img src="images/sell.png" alt="Sell icon" height="200" width="200">
                         </div>
                         <div class="proposal__content ">
-                            <h1 class="text--white">Start Shopping Today</h1>
-                            <p class="text--white">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                                leo quam aliquet diamcongue is laoreet elit metus.</p>
+                            <h1 class="text--white">League Type</h1>
                         </div>
-                        <a href="#" class="btn--round btn btn--lg btn--white">Start Shopping</a>
+                        <a href="/leaguecreate" class="btn--round btn btn--lg btn--white">Start Shopping</a>
                     </div>
                 </div>
                 <!-- end /.proposal -->
@@ -246,26 +265,5 @@
     END SELL BUY
 =================================-->
 
-<!--================================
-    START CALL TO ACTION AREA
-=================================-->
-<section class="call-to-action bgimage">
-    <div class="bg_image_holder">
-        <img src="images/calltobg.jpg" alt="">
-    </div>
-    <div class="container content_above">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="call-to-wrap">
-                    <h1 class="text--white">Ready to Join Our Marketplace!</h1>
-                    <h4 class="text--white">Over 25,000 designers and developers trust the MartPlace.</h4>
-                    <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">Join Us Today</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--================================
-    END CALL TO ACTION AREA
-=================================-->
+
 @stop
