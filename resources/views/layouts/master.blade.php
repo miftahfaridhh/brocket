@@ -249,6 +249,7 @@
                             <p>Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</p>
                             <div class="newsletter__form">
                                 <form action="/subscribe"  method="post">
+                                    @csrf
                                     <div class="field-wrapper">
                                         <input class="relative-field rounded" name="subscribe" type="text" placeholder="Enter email">
                                         <button class="btn btn--round" type="submit">Submit</button>
