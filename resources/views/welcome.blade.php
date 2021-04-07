@@ -226,7 +226,7 @@
                     </div>
                     <div class="content_above">
                         <div class="proposal__icon">
-                            <img src="images/sell.png" alt="Sell icon">
+                            <img src="images/sell.png" alt="Sell icon" height="200" width="200">
                         </div>
                         <div class="proposal__content ">
                             <h1 class="text--white">Start Shopping Today</h1>
