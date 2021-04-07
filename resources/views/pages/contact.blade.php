@@ -69,30 +69,31 @@
                                 <div class="row">
                                     <div class="col-md-8 offset-md-2">
                                         <div class="contact_form--wrapper">
-                                            <form action="#">
+                                            <form action="/sentemail"  method="post">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <input type="text" placeholder="Name">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <input type="text" placeholder="Email">
+                                                            <input type="email" name="email" placeholder="Email">
+                                                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-15">
                                                     <div class="form-group">
-                                                        <input type="text" placeholder="Subject">
+                                                        <input type="text" name="subject" placeholder="Subject" required>
                                                     </div>
                                                 </div>
 
-                                                <textarea cols="30" rows="10" placeholder="Yout text here"></textarea>
+                                                <textarea cols="30" rows="10" name="message" placeholder="Yout text here" required></textarea>
 
                                                 <div class="sub_btn">
-                                                    <button type="button" class="btn btn--round btn--default">Send</button>
+                                                    <button type="submit" class="btn btn--round btn--default">Send</button>
                                                 </div>
                                             </form>
                                         </div>

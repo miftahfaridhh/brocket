@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\BracketController;
 use App\Http\Controllers\ShowController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,9 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
 Route::get('/test', [PagesController::class, 'test']);
 Route::get('/testt', [PagesController::class, 'testt']);
+
+Route::post('/sentemail', [MailController::class, 'sent']);
+Route::post('/subscribe', [MailController::class, 'subs']);
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
 

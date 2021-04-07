@@ -248,9 +248,9 @@
                             <h4 class="footer-widget-title text--white">Newsletter</h4>
                             <p>Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</p>
                             <div class="newsletter__form">
-                                <form action="#">
+                                <form action="/subscribe"  method="post">
                                     <div class="field-wrapper">
-                                        <input class="relative-field rounded" type="text" placeholder="Enter email">
+                                        <input class="relative-field rounded" name="subscribe" type="text" placeholder="Enter email">
                                         <button class="btn btn--round" type="submit">Submit</button>
                                     </div>
                                 </form>
