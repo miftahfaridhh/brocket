@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @extends('layouts.master')
 
 @section('title', __('Not Found'))
@@ -10,10 +9,3 @@
 </div>
 
 @stop
-=======
-@extends('errors::minimal')
-
-@section('title', __('Not Found'))
-@section('code', '404')
-@section('message', __('Not Found'))
->>>>>>> db6bd64f1d236139f4095a258471e8d21ada05af

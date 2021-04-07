@@ -234,7 +234,7 @@
                         <div class="proposal__content ">
                             <h1 class="text--white">Tournament Type</h1>
                         </div>
-                        <a href="/create" class="btn--round btn btn--lg btn--white">Become an Author</a>
+                        <a href="/create" class="btn--round btn btn--lg btn--white">Get Started</a>
                     </div>
                 </div>
                 <!-- end /.proposal -->
@@ -252,7 +252,7 @@
                         <div class="proposal__content ">
                             <h1 class="text--white">League Type</h1>
                         </div>
-                        <a href="/leaguecreate" class="btn--round btn btn--lg btn--white">Start Shopping</a>
+                        <a href="/leaguecreate" class="btn--round btn btn--lg btn--white">Get Started</a>
                     </div>
                 </div>
                 <!-- end /.proposal -->
