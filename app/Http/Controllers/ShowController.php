@@ -88,7 +88,7 @@ class ShowController extends Controller
                 ->get();
         // dd($turney);
 
-        return view('pages.bracket', compact('turney','members'));
+        return view('pages.edit', compact('turney','members'));
     }
 
     /**
@@ -119,7 +119,7 @@ class ShowController extends Controller
         // $year = Carbon::parse($turney[0]->date_start)->year;
         // return view('pages.bracket', compact('id','turney','members','year'));
 
-        return redirect()->route('turnamen.edit', ['id' => $request->turnamen_id]);
+        return view('pages.create');
     }
 
     /**
