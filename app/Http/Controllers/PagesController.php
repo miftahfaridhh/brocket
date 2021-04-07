@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\turnamen;
 use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
     public function home()
     {
-        return view('welcome');
+        $turney = turnamen::all();
+        // dd ($turnamen);
+        return view('welcome', compact('turney'));
     }
     public function dashboard()
     {
