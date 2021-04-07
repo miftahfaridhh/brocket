@@ -129,7 +129,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim1.jpg" height="1077" width="1035" alt="Team Member">
+                            <img src="images/Tim1.jpg" style="width:400px;height:400px;" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Bryan Dario</h4>
@@ -164,7 +164,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim8.jpg" height="1077" width="1035" alt="Team Member">
+                            <img src="images/Tim8.jpg" style="width:400px;height:400px;" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Nisrina </h4>
@@ -200,7 +200,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim3.jpg" height="1077" width="1035" alt="Team Member">
+                            <img src="images/Tim3.jpg" style="width:400px;height:400px;" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Muhammad Fadil Hafiz</h4>
@@ -235,7 +235,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim4.jpg" height="1077" width="1035" alt="Team Member">
+                            <img src="images/Tim4.jpg" style="width:400px;height:400px;" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Muhammad Miftah Faridh</h4>
@@ -271,7 +271,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim6.jpg" height="1077" width="1035" alt="Team Member">
+                            <img src="images/Tim6.jpg" style="width:400px;height:400px;" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Suryanegara</h4>
@@ -306,7 +306,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim7.jpg" height="1077" width="1035" alt="Team Member">
+                            <img src="images/Tim7.jpg" style="width:400px;height:400px;" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Aditya Ghalib</h4>
