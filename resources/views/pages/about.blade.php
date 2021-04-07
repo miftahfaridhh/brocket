@@ -103,139 +103,6 @@
     END ABOUT HERO AREA
 =================================-->
 
-    <!--================================
-    START TIMELINE AREA
-=================================-->
-    <section class="timeline_area section--padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                <li class="happening">
-                <div class="happening--period">
-                    <div class="section-title">
-                        <h1>Brocket
-                            <span class="highlighted">TIMLINE</span>
-                        </h1>
-                        <p>Begining</p>
-                    </div>
-                </div>
-                <!-- end /.col-md-12 -->
-            </div>
-            <!-- end /.row -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="timeline">
-                        <li class="happening">
-                            <div class="happening--period">
-                                <p>January 2021</p>
-                            </div>
-                            <div class="happening--detail">
-                                <h4 class="title">MartPlace was Launched</h4>
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra justo ut scelerisque the mattis,
-                                    leo quam aliquet diam congue is laoreet.</p>
-                            </div>
-                        </li>
-
-                        <li class="happening">
-                            <div class="happening--period">
-                                <p>February 2021</p>
-                            </div>
-                            <div class="happening--detail">
-                                <h4 class="title">Launched Premium Version</h4>
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra justo ut scelerisque the mattis,
-                                    leo quam aliquet diam congue is laoreet.</p>
-                            </div>
-                        </li>
-
-                        <li class="happening">
-                            <div class="happening--period">
-                                <p>March 2021</p>
-                            </div>
-                            <div class="happening--detail">
-                                <h4 class="title">Finalizing</h4>
-                                <p>Brocket Launching Oficially</p>
-                            </div>
-                        </li>
-
-                        <li class="happening">
-                            <div class="happening--period">
-                                <p>June 2021</p>
-                            </div>
-                            <div class="happening--detail">
-                                <h4 class="title">50,000+ Community Members</h4>
-                                <p>Community Grows Bigger and bigger.</p>
-                            </div>
-                        </li>
-
-                        <li class="happening">
-                            <div class="happening--period">
-                                <p>December 2021</p>
-                            </div>
-                            <div class="happening--detail">
-                                <h4 class="title">Downloaded</h4>
-                                <p>Over than 3,000,000+ brocket downloaded all over the world</p>
-                            </div>
-                        </li>
-
-                    </ul>
-                    <!-- end /.timeline -->
-                </div>
-                <!-- end /.col-md-12 -->
-            </div>
-            <!-- end /.row -->
-        </div>
-        <!-- end /.container -->
-    </section>
- 
-    <!--================================
-    END TIMELINE AREA
-=================================-->
-
-
-    <!--================================
-    START COUNTER UP AREA2
-=================================-->
-    <section class="counter-up-area counter-up--area2">
-        <!-- start .container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Today We are in Here</h2>
-                </div>
-            </div>
-            <!-- start .col-md-12 -->
-            <div class="col-md-12">
-                <div class="counter-up">
-                    <div class="counter mcolor2">
-                        <span class="lnr lnr-code"></span>
-                        <span class="count">125,736</span>
-                        <p>Line of Codes</p>
-                    </div>
-                    <div class="counter mcolor3">
-                        <span class="lnr lnr-users"></span>
-                        <span class="count">7</span>
-                        <p>Members</p>
-                    </div>
-                    <div class="counter mcolor1">
-                        <span class="lnr lnr-smile"></span>
-                        <span class="count">120,000</span>
-                        <p>Happy customers</p>
-                    </div>
-                    <div class="counter mcolor4">
-                        <span class="lnr lnr-download"></span>
-                        <span class="count">100,000</span>
-                        <p>Downloaded</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end /.col-md-12 -->
-        </div>
-        <!-- end /.container -->
-    </section>
-    <!--================================
-    END COUNTER UP AREA2
-=================================-->
 
     <!--================================
     START MARTPLACE TEAM AREA
@@ -259,10 +126,10 @@
             <!-- end /.row -->
 
             <div class="row">
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim1.jpg" alt="Team Member">
+                            <img src="images/Tim1.jpg" height="1035" width="1077" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Bryan Dario</h4>
@@ -294,10 +161,10 @@
                 </div>
                 <!-- end /.col-md-3 -->
 
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim8.jpg" alt="Team Member">
+                            <img src="images/Tim8.jpg" height="1035" width="1077" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Nisrina </h4>
@@ -330,10 +197,10 @@
                 </div>
                 <!-- end /.col-md-3 -->
 
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim3.jpg" alt="Team Member">
+                            <img src="images/Tim3.jpg" height="1035" width="1077" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Muhammad Fadil Hafiz</h4>
@@ -365,10 +232,10 @@
                 </div>
                 <!-- end /.col-md-3 -->
 
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim4.jpg" alt="Team Member">
+                            <img src="images/Tim4.jpg" height="1035" width="1077" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Muhammad Miftah Faridh</h4>
@@ -401,46 +268,10 @@
                 </div>
                 <!-- end /.col-md-3 -->
 
-                
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim5.jpg" alt="Team Member">
-                            <figcaption>
-                                <div class="name_desig">
-                                    <h4>Yogie Wisesa</h4>
-                                    <p>Full-Stack Developer</p>
-                                </div>
-                                <!-- end /.name_desig -->
-
-                                <div class="social">
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.instagram.com/yogiewisesa/">
-                                                <span class="fa fa-instagram"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/in/yogie-wisesa/">
-                                                <span class="fa fa-linkedin"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- end /.social -->
-                            </figcaption>
-                            <!-- end /.figcaption -->
-                        </figure>
-                        <!-- end /.figure -->
-                    </div>
-                    <!-- end /.single_team_member -->
-                </div>
-                <!-- end /.col-md-3 -->
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_team_member">
-                        <figure>
-                            <img src="images/Tim6.jpg" alt="Team Member">
+                            <img src="images/Tim6.jpg" height="1035" width="1077" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Suryanegara</h4>
@@ -472,10 +303,10 @@
                 </div>
                 <!-- end /.col-md-3 -->
 
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="single_team_member">
                         <figure>
-                            <img src="images/Tim7.jpg" alt="Team Member">
+                            <img src="images/Tim7.jpg" height="1035" width="1077" alt="Team Member">
                             <figcaption>
                                 <div class="name_desig">
                                     <h4>Aditya Ghalib</h4>
