@@ -22,6 +22,7 @@ class ShowController extends Controller
     {
         $turney = turnamen::all();
         // dd ($turnamen);
+        $turney = DB::table('turnamen')->where('user_id',(Auth::user()->id))->get();
         return view('pages.dashboard', compact('turney'));
     }
 
