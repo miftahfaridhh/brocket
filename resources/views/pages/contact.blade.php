@@ -70,6 +70,7 @@
                                     <div class="col-md-8 offset-md-2">
                                         <div class="contact_form--wrapper">
                                             <form action="/sentemail"  method="post">
+                                                @csrf
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
