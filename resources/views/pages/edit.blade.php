@@ -6,7 +6,7 @@
 
 <section class="section--padding2 bgimage">
     <div class="bg_image_holder">
-        <img src="images/Background.png" alt="background-image" style="width:1920px">
+        <img src="images/Background.png" alt="background-image" style="background-size: 100% 100%;">
     </div>
     <!-- start hero-content -->
     <div class="content_above">
@@ -15,7 +15,7 @@
             <!-- start .container -->
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <form method="POST" action="/editbracket">
                             @csrf
                             <div class="section-title">
@@ -42,6 +42,8 @@
                                 @endforeach
                                 </div>
                             </div>
+
+                            <button class="btn btn--md btn--round" type="submit">Update</button>  
 
                                 
                         </form>
