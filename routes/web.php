@@ -34,6 +34,10 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     
     Route::post('/generatebracket', [BracketController::class, 'generatebracket']);
     Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);    
+       
+
+    Route::get('/bracket/edit/{id}', [ShowController::class, 'edit'])->name('turnamen.bracket');
+    Route::post('/editbracket', [BracketController::class, 'update']); 
 });
 
 Route::get('/bracket/{id}', [ShowController::class, 'show'])->name('turnamen.bracket');
