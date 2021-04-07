@@ -8,6 +8,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    @if (session('statussending'))
+                        <div class="alert alert-success">
+                            {{ session('statussending') }}
+                        </div>
+                    @endif
                     <div class="row">
                         <!-- start col-md-12 -->
                         <div class="col-md-12">

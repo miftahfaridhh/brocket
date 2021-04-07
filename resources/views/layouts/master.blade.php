@@ -255,6 +255,11 @@
                                         <button class="btn btn--round" type="submit">Submit</button>
                                     </div>
                                 </form>
+                                @if (session('statussub'))
+                                    <div class="alert alert-success">
+                                        {{ session('statussub') }}
+                                    </div>
+                                @endif
                             </div>
 
                             <!-- start .social -->
