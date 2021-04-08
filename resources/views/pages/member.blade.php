@@ -34,7 +34,7 @@
                             <div class="login--form">
                                 <div class="form-group">
                                 @foreach ($members as $member)
-                                    <h5 href="/bracket/edit/{{$member->name}}">{{$member->name}}</h5>
+                                    <h5 > <a href="/bracket/edit/{{$member->name}}"> {{$member->name}} </a></h5>
                                     <!-- <label for="name">{{$member->name}}</label>
                                     <input id="name" name="name[]" type="hidden" value="{{$member->name}}" >
                                     <input id="name" name="gold_medal[]" type="number" placeholder="{{$member->gold_medal}}" >
