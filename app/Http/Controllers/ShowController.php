@@ -141,6 +141,24 @@ class ShowController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function podium($id)
+    {
+        
+        $members = DB::table('member')
+                ->where('turnamen_id', '=', $id)
+                ->orderBy('created_at', 'desc');
+        // dd($members);
+
+        $turney = DB::table('turnamen')
+                ->where('id', '=', $id)
+                ->get();
+                
+        // dd($turney);
+
+        $year = Carbon::parse($turney[0]->date_start)->year;
+        return view('pages.podium', compact('id','turney','members','year'));
+    }
+
     public function destroy($id)
     {
         //

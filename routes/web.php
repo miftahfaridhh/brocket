@@ -42,4 +42,5 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 });
 
 Route::get('/bracket/{id}', [ShowController::class, 'show'])->name('turnamen.bracket');
+Route::get('/podium/{id}', [ShowController::class, 'podium'])->name('turnamen.podium');
 Route::get('/dashboard', [ShowController::class, 'index'])->name('dashboard');
