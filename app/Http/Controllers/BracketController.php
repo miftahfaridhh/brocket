@@ -79,7 +79,7 @@ class BracketController extends Controller
     }
     public function update(Request $request)
     {
-        // dd($request);
+        dd($request);
         for ($i = 0; $i < ($request->total_member); $i++){
             DB::table('member')->where('name',$request->name[$i])->update([
                 'gold_medal' => $request->gold_medal[$i],
