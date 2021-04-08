@@ -24,16 +24,28 @@
                                 </h1>
                             </div>
 
-
-                            <div class="login--form">
-                                <div class="form-group">
-                                    <h5 href="/bracket/edit/{{$members[0]->name}}">{{$members[0]->name}}</h5>
-                                    <label for="name">{{$members[0]->name}}</label>
-                                    <input id="name" name="name" type="hidden" value="{{$members[0]->name}}" >
-                                    <input id="name" name="gold_medal" type="number" placeholder="{{$members[0]->gold_medal}}" >
-                                    <input id="name" name="silver_medal" type="number" placeholder="{{$members[0]->silver_medal}}" >
-                                    <input id="name" name="bronze_medal" type="number" placeholder="{{$members[0]->bronze_medal}}" >
-                                
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Member Name</label>
+                                <div class="col-sm-10">
+                                <input type="text" readonly name="name" class="form-control-plaintext" id="staticEmail" value="{{$members[0]->name}}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="gold" class="col-sm-2 col-form-label">Gold Medal</label>
+                                <div class="col-sm-10">
+                                <input type="number" name="gold_medal" class="form-control" id="gold" placeholder="Input Gold Medal">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="silver" class="col-sm-2 col-form-label">Silver Medal</label>
+                                <div class="col-sm-10">
+                                <input type="number" name="silver_medal" class="form-control" id="silver" placeholder="Input Silver Medal">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="bronze" class="col-sm-2 col-form-label">Bronze Medal</label>
+                                <div class="col-sm-10">
+                                <input type="number" name="bronze_medal" class="form-control" id="bronze" placeholder="Input Bronze Medal">
                                 </div>
                             </div>
 
