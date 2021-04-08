@@ -47,9 +47,7 @@
                                     <input id="name" name="bronze_medal[]" type="number" placeholder="{{$member->bronze_medal}}" > -->
                                 @endforeach
                                 </div>
-                            </div>
-
-                            <button class="btn btn--md btn--round" type="submit">Update</button>  
+                            </div> 
 
                                 
                         </form>

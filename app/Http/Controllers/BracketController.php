@@ -80,13 +80,12 @@ class BracketController extends Controller
     public function update(Request $request)
     {
         dd($request);
-        for ($i = 0; $i < ($request->total_member); $i++){
-            DB::table('member')->where('name',$request->name[$i])->update([
-                'gold_medal' => $request->gold_medal[$i],
-                'silver_medal' => $request->siver_medal[$i],
-                'bronze_medal' => $request->bronze_medal[$i]
-            ]);
-        }
+        DB::table('member')->where('name',$request->name)->update([
+            'gold_medal' => $request->gold_medal,
+            'silver_medal' => $request->siver_medal,
+            'bronze_medal' => $request->bronze_medal,
+            'total_medal' => ($request->bronze_medal)*3+($request->bronze_medal)*2+($request->bronze_medal)
+        ]);
         // $id = $request->turnamen_id;
         // $members = DB::table('member')
         //         ->where('turnamen_id', '=', $id)
@@ -99,6 +98,6 @@ class BracketController extends Controller
         // $year = Carbon::parse($turney[0]->date_start)->year;
         // return view('pages.bracket', compact('id','turney','members','year'));
 
-        return view('pages.create');
+        return \Redirect::back()->with('statusreport', 'Success to Report');
     }
 }
