@@ -27,12 +27,12 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                    <h5 href="/bracket/edit/{{$member->name}}">{{$member->name}}</h5>
-                                    <label for="name">{{$member->name}}</label>
-                                    <input id="name" name="name" type="hidden" value="{{$member->name}}" >
-                                    <input id="name" name="gold_medal" type="number" placeholder="{{$member->gold_medal}}" >
-                                    <input id="name" name="silver_medal" type="number" placeholder="{{$member->silver_medal}}" >
-                                    <input id="name" name="bronze_medal" type="number" placeholder="{{$member->bronze_medal}}" >
+                                    <h5 href="/bracket/edit/{{$member->name}}">{{$members->name}}</h5>
+                                    <label for="name">{{$members->name}}</label>
+                                    <input id="name" name="name" type="hidden" value="{{$members->name}}" >
+                                    <input id="name" name="gold_medal" type="number" placeholder="{{$members->gold_medal}}" >
+                                    <input id="name" name="silver_medal" type="number" placeholder="{{$members->silver_medal}}" >
+                                    <input id="name" name="bronze_medal" type="number" placeholder="{{$members->bronze_medal}}" >
                                 
                                 </div>
                             </div>
