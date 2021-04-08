@@ -24,16 +24,23 @@
                                 </h1>
                             </div>
 
+                            <div class="login--form">
+                                <div class="form-group">
+                                    <label for="name">Tournament Name</label>
+                                    <input id="name" name="name" type="text" placeholder="{{$turney[0]->name}}" readonly>
+                                </div>
+                            </div>
 
                             <div class="login--form">
                                 <div class="form-group">
+                                @foreach ($members as $member)
                                     <h5 href="/bracket/edit/{{$member->name}}">{{$member->name}}</h5>
-                                    <label for="name">{{$member->name}}</label>
-                                    <input id="name" name="name" type="hidden" value="{{$member->name}}" >
-                                    <input id="name" name="gold_medal" type="number" placeholder="{{$member->gold_medal}}" >
-                                    <input id="name" name="silver_medal" type="number" placeholder="{{$member->silver_medal}}" >
-                                    <input id="name" name="bronze_medal" type="number" placeholder="{{$member->bronze_medal}}" >
-                                
+                                    <!-- <label for="name">{{$member->name}}</label>
+                                    <input id="name" name="name[]" type="hidden" value="{{$member->name}}" >
+                                    <input id="name" name="gold_medal[]" type="number" placeholder="{{$member->gold_medal}}" >
+                                    <input id="name" name="silver_medal[]" type="number" placeholder="{{$member->silver_medal}}" >
+                                    <input id="name" name="bronze_medal[]" type="number" placeholder="{{$member->bronze_medal}}" > -->
+                                @endforeach
                                 </div>
                             </div>
 

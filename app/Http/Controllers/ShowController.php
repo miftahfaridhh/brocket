@@ -76,7 +76,7 @@ class ShowController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function member($id)
     {
         $members = DB::table('member')
                 ->where('turnamen_id', '=', $id)
@@ -88,8 +88,20 @@ class ShowController extends Controller
                 ->get();
         // dd($turney);
 
-        return view('pages.edit', compact('turney','members'));
+        return view('pages.member', compact('turney','members'));
     }
+
+    public function edit($name)
+    {
+        $members = DB::table('member')
+                ->where('name', '=', $name)
+                ->get();
+        // dd($members);
+
+        return view('pages.edit', compact('members'));
+    }
+
+
 
     /**
      * Update the specified resource in storage.
