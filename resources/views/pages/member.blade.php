@@ -33,10 +33,13 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                    <label for="name">Tournament Name</label>
+                                    <label for="name">Tournament Member</label>
                                 @foreach ($members as $member)
-                                    
+                                    <div class="col-sm-10">
                                     <a href="/bracket/edit/{{$member->name}}"> {{$member->name}} </a>
+                                    
+                                    </div>
+                                    
                                     <!-- <label for="name">{{$member->name}}</label>
                                     <input id="name" name="name[]" type="hidden" value="{{$member->name}}" >
                                     <input id="name" name="gold_medal[]" type="number" placeholder="{{$member->gold_medal}}" >
