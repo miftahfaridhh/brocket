@@ -27,7 +27,7 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                    <h5 href="/bracket/edit/{{$member->name}}">{{$members->name}}</h5>
+                                    <h5 href="/bracket/edit/{{$members->name}}">{{$members->name}}</h5>
                                     <label for="name">{{$members->name}}</label>
                                     <input id="name" name="name" type="hidden" value="{{$members->name}}" >
                                     <input id="name" name="gold_medal" type="number" placeholder="{{$members->gold_medal}}" >
