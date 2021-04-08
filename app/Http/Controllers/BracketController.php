@@ -80,7 +80,7 @@ class BracketController extends Controller
     public function update(Request $request)
     {
         dd($request);
-        DB::table('member')->where('name',$request->name)->update([
+        DB::table('member')->where('name',$request->name)->updateOrInsert([
             'gold_medal' => $request->gold_medal,
             'silver_medal' => $request->siver_medal,
             'bronze_medal' => $request->bronze_medal,

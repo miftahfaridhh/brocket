@@ -146,7 +146,7 @@
 	<div class="text-center">
 		<button class="justify-content-center btn btn--md btn--round" type="button" onClick="window.print()">Print This Page</button>
 		<button class="justify-content-center btn btn--md btn--round" type="button" onclick="copyToClipboard()">Share</button>
-		<button class="justify-content-center btn btn--md btn--round" type="button" onclick="location.href='/podium';">Podium</button>
+		<button class="justify-content-center btn btn--md btn--round" type="button" onclick="location.href='/podium/{{$turney[0]->id}}';">Podium</button>
 	</div>
 	</section>
 
