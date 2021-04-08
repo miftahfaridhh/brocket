@@ -23,7 +23,7 @@
                                     <span class="highlighted">Brocket!</span>
                                 </h1>
                             </div>
-                            
+
                             <div class="form-group row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Tournament Name</label>
                                 <div class="col-sm-10">
@@ -33,9 +33,10 @@
 
                             <div class="login--form">
                                 <div class="form-group">
-                                @foreach ($members as $member)
                                     <label for="name">Tournament Name</label>
-                                    <h5 > <a href="/bracket/edit/{{$member->name}}"> {{$member->name}} </a></h5>
+                                @foreach ($members as $member)
+                                    
+                                    <a href="/bracket/edit/{{$member->name}}"> {{$member->name}} </a>
                                     <!-- <label for="name">{{$member->name}}</label>
                                     <input id="name" name="name[]" type="hidden" value="{{$member->name}}" >
                                     <input id="name" name="gold_medal[]" type="number" placeholder="{{$member->gold_medal}}" >
