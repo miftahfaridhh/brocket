@@ -144,9 +144,9 @@ class ShowController extends Controller
     public function podium($id)
     {
         
-        $members = DB::table('member')
+        return $members = DB::table('member')
                 ->where('turnamen_id', '=', $id)
-                ->orderBy('created_at', 'desc');
+                ->orderBy('created_at', 'desc')->get();
         // dd($members);
 
         $turney = DB::table('turnamen')
