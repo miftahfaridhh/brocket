@@ -20,7 +20,7 @@ class BracketController extends Controller
     {
       
 
-        dd($request->all());
+        //dd($request->all());
         turnamen::create([
             'user_id' => Auth::user()->id,
             'name' => $request->name,
