@@ -21,18 +21,36 @@ Made to complete studies, by :
 ## How to run
 
 - Make sure all the requirements have been met
+
 - Open CMD
-- git clone https://github.com/miftahfaridhh/brocket.git
-- cd brocket
-- composer install
-- npm install
-- cp .env.example .env
-- php artisan key:generate
+```bash
+git clone https://github.com/miftahfaridhh/brocket.git
+cd brocket
+composer install
+```
+- Copy .env.example file to .env on the root folder. Type like this if you using command prompt Windows
+```bash
+copy .env.example .env
+```
+or if using terminal, Ubuntu.
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 - open XAMPP without closing the CMD, klik start Click start on apache and MySQL
+
 - open your localhost/phpmyadmin on your browser
+
 - make a new database with the name 'brocket'
-- open cmd again, type 'php artisan migrate'
-- type 'php artisan serve' to run the laravel project
+
+- open cmd/terminl again, type
+```bash
+php artisan migrate
+```
+- To run the laravel project
+```bash
+php artisan serve
+```
 
 ## How To  Contrib
 
