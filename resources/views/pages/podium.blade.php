@@ -20,7 +20,7 @@
   <tbody>
     @foreach ($members as $member)
     <tr>
-      <th scope="row">$loop->iteration</th>
+      <th scope="row">{{$loop->iteration}}</th>
       <td>{{$member->name}}</td>
       <td>{{$member->gold_medal}}</td>
       <td>{{$member->silver_medal}}</td>
