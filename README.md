@@ -22,7 +22,7 @@ Made to complete studies, by :
 
 - Make sure all the requirements have been met
 
-- Open CMD
+- Open CMD/Terminal
 ```bash
 git clone https://github.com/miftahfaridhh/brocket.git
 cd brocket
