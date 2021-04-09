@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-<div class="section-title">
+<div style="padding: 50px;" class="section-title">
     <h1>Podium <span class="highlighted">{{$turney[0]->name}} {{$year}}</span></h1>
 </div>
 

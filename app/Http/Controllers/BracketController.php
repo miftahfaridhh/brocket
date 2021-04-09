@@ -79,14 +79,22 @@ class BracketController extends Controller
         return view('dashboard');
     }
 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
     public function update(Request $request)
     {
-        dd($request);
-        DB::table('member')->where('name',$request->name)->updateOrInsert([
+        // dd($request->all());
+        DB::table('member')->where('name',$request->name)->update([
             'gold_medal' => $request->gold_medal,
-            'silver_medal' => $request->siver_medal,
+            'silver_medal' => $request->silver_medal,
             'bronze_medal' => $request->bronze_medal,
-            'total_medal' => ($request->bronze_medal)*3+($request->bronze_medal)*2+($request->bronze_medal)
+            'total_medal' => ($request->gold_medal)*3+($request->silver_medal)*2+($request->bronze_medal)
         ]);
         // $id = $request->turnamen_id;
         // $members = DB::table('member')
