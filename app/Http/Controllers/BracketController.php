@@ -11,6 +11,7 @@ use Auth;
 use Redirect;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class BracketController extends Controller
 {
@@ -19,7 +20,7 @@ class BracketController extends Controller
     {
       
 
-        // dd($request->all());
+        dd($request->all());
         turnamen::create([
             'user_id' => Auth::user()->id,
             'name' => $request->name,
@@ -77,6 +78,7 @@ class BracketController extends Controller
         ]);
         return view('dashboard');
     }
+
     public function update(Request $request)
     {
         dd($request);
@@ -99,5 +101,9 @@ class BracketController extends Controller
         // return view('pages.bracket', compact('id','turney','members','year'));
 
         return \Redirect::back()->with('statusreport', 'Success to Report');
+    }
+    public function upgrade(Request $request)
+    {
+        dd($request);
     }
 }

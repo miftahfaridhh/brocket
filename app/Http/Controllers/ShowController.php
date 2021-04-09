@@ -10,6 +10,8 @@ use Auth;
 use Redirect;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
+
 
 class ShowController extends Controller
 {

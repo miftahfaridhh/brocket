@@ -6,7 +6,7 @@
 
 <section class="section--padding2 bgimage">
     <div class="bg_image_holder">
-        <img src="images/Background.png" alt="background-image" style="background-size: 100% 100%;">
+        <img src="{{ asset('images/Background.png') }}" alt="background-image" style="width:1920px">
     </div>
     <!-- start hero-content -->
     <div class="content_above">
@@ -15,8 +15,8 @@
             <!-- start .container -->
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <form method="POST" action="/editbracket">
+                    <div class="col-md-6">
+                        <form method="post" action="{{ url('/editbracket') }}">
                             @csrf
                             <div class="section-title">
                                 <h1>Welcome to
@@ -24,34 +24,52 @@
                                 </h1>
                             </div>
 
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Member Name</label>
-                                <div class="col-sm-10">
-                                <input type="text" readonly name="name" class="form-control-plaintext" id="staticEmail" value="{{$members[0]->name}}">
+                            <div class="login--form">
+                                <div class="form-group">
+                                    <label for="name">Tournament Name</label>
+                                    <input id="name" name="name" type="text" placeholder="Enter your Tournament Name">
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="gold" class="col-sm-2 col-form-label">Gold Medal</label>
-                                <div class="col-sm-10">
-                                <input type="number" name="gold_medal" class="form-control" id="gold" placeholder="Input Gold Medal">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="silver" class="col-sm-2 col-form-label">Silver Medal</label>
-                                <div class="col-sm-10">
-                                <input type="number" name="silver_medal" class="form-control" id="silver" placeholder="Input Silver Medal">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="bronze" class="col-sm-2 col-form-label">Bronze Medal</label>
-                                <div class="col-sm-10">
-                                <input type="number" name="bronze_medal" class="form-control" id="bronze" placeholder="Input Bronze Medal">
-                                </div>
-                            </div>
 
-                            <button class="btn btn--md btn--round" type="submit">Update</button>  
+                                <div class="form-group">
+                                    <label for="total_member">Total Participants</label>
+                                    <select type="number" class="form-control" name="total_member" id="total_member" placeholder="Enter Number Of Team">
+                                        <option>4</option>
+                                        <option>8</option>
+                                        <option>16</option>
+                                        <option>32</option>
+                                    </select>
+                                </div>
 
-                                
+                                <div class="login--form row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="date_start">Date Start</label>
+                                            <div class="input_with_icon">
+                                                <input id="date_start" name="date_start"type="text" class="dattaPikkara" placeholder="From">
+                                                <span class="lnr lnr-calendar-full"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="date_end">Date End</label>
+                                            <div class="input_with_icon">
+                                                <input id="date_end" name="date_end"type="text" class="dattaPikkara" placeholder="To">
+                                                <span class="lnr lnr-calendar-full"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea type="text" cols="10" rows="5" class="text" name="description" id="description" placeholder="Input Turnamen Description"></textarea>
+                                </div>
+
+                                <button class="btn btn--md btn--round" type="submit">Input Team Name</button>
+
+                            </div>
                         </form>
                     </div>
                     <!-- end .col-md-6 -->

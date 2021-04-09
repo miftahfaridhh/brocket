@@ -25,6 +25,9 @@ Route::get('/testt', [PagesController::class, 'testt']);
 
 Route::post('/sentemail', [MailController::class, 'sent']);
 Route::post('/subscribe', [MailController::class, 'subs']);
+Route::get('/bracket/{id}', [ShowController::class, 'show'])->name('turnamen.bracket');
+Route::get('/podium/{id}', [ShowController::class, 'podium'])->name('turnamen.podium');
+Route::get('/dashboard', [ShowController::class, 'index'])->name('dashboard');
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
 
@@ -34,13 +37,9 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     
     Route::post('/generatebracket', [BracketController::class, 'generatebracket']);
     Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);    
-       
-
+    
+    
     Route::get('/bracket/member/{id}', [ShowController::class, 'member'])->name('turnamen.member');
     Route::get('/bracket/edit/{name}', [ShowController::class, 'edit'])->name('turnamen.edit');
-    Route::post('/editbracket', [BracketController::class, 'update'])->name('turnamen.update');
+    Route::post('/editbracket', [BracketController::class, 'update']);
 });
-
-Route::get('/bracket/{id}', [ShowController::class, 'show'])->name('turnamen.bracket');
-Route::get('/podium/{id}', [ShowController::class, 'podium'])->name('turnamen.podium');
-Route::get('/dashboard', [ShowController::class, 'index'])->name('dashboard');
