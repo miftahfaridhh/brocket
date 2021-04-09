@@ -35,8 +35,12 @@ copy .env.example .env
 or if using terminal, Ubuntu.
 ```bash
 cp .env.example .env
+```
+- generate app key
+```bash
 php artisan key:generate
 ```
+
 - open XAMPP without closing the CMD, klik start Click start on apache and MySQL
 
 - open your localhost/phpmyadmin on your browser
