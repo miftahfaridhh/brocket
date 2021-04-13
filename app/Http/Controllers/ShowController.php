@@ -57,51 +57,9 @@ class ShowController extends Controller
      */
     public function show($id)
     {
-        
-        $members = DB::table('member')
-                ->where('turnamen_id', '=', $id)
-                ->get();
-        // dd($members);
-
-        $turney = DB::table('turnamen')
-                ->where('id', '=', $id)
-                ->get();
-        // dd($turney);
-
-        $year = Carbon::parse($turney[0]->date_start)->year;
-        return view('pages.bracket', compact('id','turney','members','year'));
+        //
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function member($id)
-    {
-        $members = DB::table('member')
-                ->where('turnamen_id', '=', $id)
-                ->get();
-        // dd($members);
-
-        $turney = DB::table('turnamen')
-                ->where('id', '=', $id)
-                ->get();
-        // dd($turney);
-
-        return view('pages.member', compact('turney','members'));
-    }
-
-    public function edit($name)
-    {
-        $members = DB::table('member')
-                ->where('name', '=', $name)
-                ->get();
-        // dd($members);
-
-        return view('pages.edit', compact('members'));
-    }
+    
 
 
 
@@ -115,26 +73,6 @@ class ShowController extends Controller
     public function update(Request $request, $id)
     {
         dd($request);
-        for ($i = 0; $i < ($request->total_member); $i++){
-            DB::table('member')->where('name',$request->name[$i])->update([
-                'gold_medal' => $request->gold_medal[$i],
-                'silver_medal' => $request->siver_medal[$i],
-                'bronze_medal' => $request->bronze_medal[$i]
-            ]);
-        }
-        // $id = $request->turnamen_id;
-        // $members = DB::table('member')
-        //         ->where('turnamen_id', '=', $id)
-        //         ->get();
-        // // dd($members);
-        // $turney = DB::table('turnamen')
-        //         ->where('id', '=', $id)
-        //         ->get();
-        // // dd($turney);
-        // $year = Carbon::parse($turney[0]->date_start)->year;
-        // return view('pages.bracket', compact('id','turney','members','year'));
-
-        return view('pages.create');
     }
 
     /**

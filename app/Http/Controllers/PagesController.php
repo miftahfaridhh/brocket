@@ -25,21 +25,5 @@ class PagesController extends Controller
     {
         return view('pages.contact');
     }
-    public function login()
-    {
-        return view('pages.login');
-    }
-    public function register()
-    {
-        return view('pages.register');
-    }
-    public function create()
-    {
-        return view('pages.create');
-    }
-    public function addteam()
-    {
-        return view('pages.addteam');
-    }
 }
 

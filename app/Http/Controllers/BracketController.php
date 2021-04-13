@@ -16,6 +16,11 @@ use App\Http\Controllers\Controller;
 class BracketController extends Controller
 {
 
+    public function index()
+    {
+        return view('pages.create');
+    }
+
     public function storeturnamen(Request $request)
     {
       
@@ -32,8 +37,6 @@ class BracketController extends Controller
         ]);
 
         $turnamen = DB::table('turnamen')->latest('updated_at')->first();
-        // dd($turnamen);
-        // return redirect()->route('turnamen.addteam');
         return view("pages.addteam", compact('turnamen'));
 
     } 
@@ -47,36 +50,10 @@ class BracketController extends Controller
                 'name' => $mem[$i]             
             ]);
         }
-        // $id = $request->turnamen_id;
-        // $members = DB::table('member')
-        //         ->where('turnamen_id', '=', $id)
-        //         ->get();
-        // // dd($members);
-        // $turney = DB::table('turnamen')
-        //         ->where('id', '=', $id)
-        //         ->get();
-        // // dd($turney);
-        // $year = Carbon::parse($turney[0]->date_start)->year;
-        // return view('pages.bracket', compact('id','turney','members','year'));
 
         return redirect()->route('turnamen.bracket', ['id' => $request->turnamen_id]);
 
         
-    }
-
-    public function show(Request $request)
-    {
-
-        // dd($request->all());
-        member::create([
-            'id' => ($request->name).timestamp(),
-            'turnamen_id' => turnamen::find($id),
-            'name' => ($request->name)
-            // 'goldmedal' => ($request->goldmedal),
-            // 'silvermedal' => $request->silvermedal,
-            // 'bronzemedal' => $request->bronzemedal
-        ]);
-        return view('dashboard');
     }
 
     /**
@@ -98,5 +75,29 @@ class BracketController extends Controller
         ]);
         return redirect('/dashboard');
     }
-    
+
+    public function member($id)
+    {
+        $members = DB::table('member')
+                ->where('turnamen_id', '=', $id)
+                ->get();
+        // dd($members);
+
+        $turney = DB::table('turnamen')
+                ->where('id', '=', $id)
+                ->get();
+        // dd($turney);
+
+        return view('pages.member', compact('turney','members'));
+    }
+
+    public function edit($name)
+    {
+        $members = DB::table('member')
+                ->where('name', '=', $name)
+                ->get();
+        // dd($members);
+
+        return view('pages.edit', compact('members'));
+    }
 }

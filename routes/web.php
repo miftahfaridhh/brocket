@@ -30,15 +30,15 @@ Route::get('/dashboard', [ShowController::class, 'index'])->name('dashboard');
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
 
-
-    Route::get('/create', [PagesController::class, 'create'])->name('turnamen.create');
-    Route::get('/addteam', [ShowController::class, 'addteam'])->name('turnamen.addteam');
+    Route::get('/create', [BracketController::class, 'index'])->name('turnamen.create');
     
+    //create
     Route::post('/generatebracket', [BracketController::class, 'generatebracket']);
-    Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);    
-    
-    
-    Route::get('/bracket/member/{id}', [ShowController::class, 'member'])->name('turnamen.member');
-    Route::get('/bracket/edit/{name}', [ShowController::class, 'edit'])->name('turnamen.edit');
+    Route::post('/storeturnamen', [BracketController::class, 'storeturnamen']);
+
+    //edit
+    Route::get('/bracket/member/{id}', [BracketController::class, 'member'])->name('turnamen.member');
+    Route::get('/bracket/edit/{name}', [BracketController::class, 'edit'])->name('turnamen.edit');
     Route::post('/editbracket', [BracketController::class, 'update']);
+    
 });
