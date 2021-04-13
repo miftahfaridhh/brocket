@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="product-title-area ">
                         <div class="product__title">
-                            <h2>Tournament List</h2>
+                            <h2>Your Tournament</h2>
                         </div>
 
                         <div class="product__slider-nav rounded">

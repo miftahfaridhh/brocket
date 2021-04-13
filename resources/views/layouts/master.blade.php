@@ -161,7 +161,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="info-footer">
                             <div class="info__logo">
-                                <img src="{{ asset('images/flogo.png') }}" alt="footer logo">
+                                <img src="{{ asset('images/Logo 270x50 Trans-01.png') }}" style="width:166;height:40;" alt="footer logo">
+                                <!-- <img src="{{ asset('images/flogo.png') }}" alt="footer logo"> -->
                             </div>
                             <p class="info--text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis,
                                 leo quam.</p>

@@ -96,22 +96,7 @@ class BracketController extends Controller
             'bronze_medal' => $request->bronze_medal,
             'total_medal' => ($request->gold_medal)*3+($request->silver_medal)*2+($request->bronze_medal)
         ]);
-        // $id = $request->turnamen_id;
-        // $members = DB::table('member')
-        //         ->where('turnamen_id', '=', $id)
-        //         ->get();
-        // // dd($members);
-        // $turney = DB::table('turnamen')
-        //         ->where('id', '=', $id)
-        //         ->get();
-        // // dd($turney);
-        // $year = Carbon::parse($turney[0]->date_start)->year;
-        // return view('pages.bracket', compact('id','turney','members','year'));
-
-        return \Redirect::back()->with('statusreport', 'Success to Report');
+        return redirect('/dashboard');
     }
-    public function upgrade(Request $request)
-    {
-        dd($request);
-    }
+    
 }

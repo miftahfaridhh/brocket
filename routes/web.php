@@ -20,18 +20,17 @@ use App\Http\Controllers\MailController;
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/contact', [PagesController::class, 'contact']);
-Route::get('/test', [PagesController::class, 'test']);
-Route::get('/testt', [PagesController::class, 'testt']);
 
 Route::post('/sentemail', [MailController::class, 'sent']);
 Route::post('/subscribe', [MailController::class, 'subs']);
+
 Route::get('/bracket/{id}', [ShowController::class, 'show'])->name('turnamen.bracket');
 Route::get('/podium/{id}', [ShowController::class, 'podium'])->name('turnamen.podium');
 Route::get('/dashboard', [ShowController::class, 'index'])->name('dashboard');
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
 
-    // Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard');
+
     Route::get('/create', [PagesController::class, 'create'])->name('turnamen.create');
     Route::get('/addteam', [ShowController::class, 'addteam'])->name('turnamen.addteam');
     

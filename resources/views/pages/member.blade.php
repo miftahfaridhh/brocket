@@ -6,7 +6,7 @@
 
 <section class="section--padding2 bgimage">
     <div class="bg_image_holder">
-        <img src="images/Background.png" alt="background-image" style="background-size: 100% 100%;">
+        <img src="{{ asset('images/Background.png') }}" alt="background-image" style="background-size: 100% 100%;">
     </div>
     <!-- start hero-content -->
     <div class="content_above">
@@ -15,7 +15,7 @@
             <!-- start .container -->
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <form method="POST" action="/editbracket">
                             @csrf
                             <div class="section-title">
@@ -24,27 +24,17 @@
                                 </h1>
                             </div>
 
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Tournament Name</label>
-                                <div class="col-sm-10">
-                                <input type="text" readonly name="name" class="form-control-plaintext" id="staticEmail" placeholder="{{$turney[0]->name}}">
-                                </div>
-                            </div>
-
                             <div class="login--form">
                                 <div class="form-group">
-                                    <label for="name">Tournament Member</label>
+                                    <label for="name">Tournament Name</label>
+                                    <input id="name" name="name" readonly type="text" placeholder="{{$turney[0]->name}}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Click Tournament Member To Edit</label>
                                 @foreach ($members as $member)
-                                    <div class="col-sm-10">
-                                    <a href="/bracket/edit/{{$member->name}}"> {{$member->name}} </a>
-                                    
+                                    <div class="col-md-6">
+                                        <a href="/bracket/edit/{{$member->name}}"> {{$member->name}} </a>
                                     </div>
-                                    
-                                    <!-- <label for="name">{{$member->name}}</label>
-                                    <input id="name" name="name[]" type="hidden" value="{{$member->name}}" >
-                                    <input id="name" name="gold_medal[]" type="number" placeholder="{{$member->gold_medal}}" >
-                                    <input id="name" name="silver_medal[]" type="number" placeholder="{{$member->silver_medal}}" >
-                                    <input id="name" name="bronze_medal[]" type="number" placeholder="{{$member->bronze_medal}}" > -->
                                 @endforeach
                                 </div>
                             </div> 
