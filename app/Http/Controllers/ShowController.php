@@ -57,11 +57,21 @@ class ShowController extends Controller
      */
     public function show($id)
     {
-        //
+        $members = DB::table('member')
+                ->where('turnamen_id', '=', $id)
+                ->orderBy('total_medal', 'desc')->get();
+        // dd($members);
+
+        $turney = DB::table('turnamen')
+                ->where('id', '=', $id)
+                ->get();
+                
+        // dd($turney);
+
+        $year = Carbon::parse($turney[0]->date_start)->year;
+        return view('pages.bracket', compact('id','turney','members','year'));
     }
     
-
-
 
     /**
      * Update the specified resource in storage.
