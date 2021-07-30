@@ -44,8 +44,8 @@
                                 <span class="tiles__icon lnr lnr-phone"></span>
                                 <h4 class="tiles__title">Phone Number</h4>
                                 <div class="tiles__content">
-                                    <p>+62812 xxxx xxxx</p>
-                                    <p>+62812 xxxx xxxx</p>
+                                    <p>+62 822 6471 0439</p>
+                                    <p>+62 823 4489 3677</p>
                                 </div>
                             </div>
                             <!-- end /.contact_tile -->

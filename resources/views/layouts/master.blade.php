@@ -164,8 +164,7 @@
                                 <img src="{{ asset('images/Logo 270x50 Trans-01.png') }}" style="width:166;height:40;" alt="footer logo">
                                 <!-- <img src="{{ asset('images/flogo.png') }}" alt="footer logo"> -->
                             </div>
-                            <p class="info--text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis,
-                                leo quam.</p>
+                            <p class="info--text"></p>
                             <ul class="info-contact">
                                 <li>
                                     <span class="lnr lnr-phone info-icon"></span>
