@@ -11,3 +11,11 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+# Credentials & secrets — never commit these
+*service_account*.json
+*credentials*.json
+/private/
+/google-credential/
+*.pem
+*.key

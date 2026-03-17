@@ -134,6 +134,18 @@ This project was developed as a university assignment by:
 - Muhamad Fadil Hafiz
 - Nisrina Athallah
 
+## Security
+
+**Never commit credentials to this repository.** The following are ignored via `.gitignore`:
+
+| Path | Description |
+|---|---|
+| `.env` | Database credentials and application secrets |
+| `*service_account*.json` | Cloud service account key files |
+| `*credentials*.json` | Any credentials JSON file |
+
+Use `.env.example` as the template and fill in your own values locally.
+
 ## License
 
 This project is open-sourced under the [MIT License](LICENSE).
